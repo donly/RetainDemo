@@ -15,6 +15,9 @@
 		F21D89E015BD6B6100EDF2BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D89DF15BD6B6100EDF2BF /* AppDelegate.m */; };
 		F21D89E315BD6B6100EDF2BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D89E215BD6B6100EDF2BF /* ViewController.m */; };
 		F21D89E615BD6B6100EDF2BF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D89E415BD6B6100EDF2BF /* ViewController.xib */; };
+		F21D89EE15BD6C1F00EDF2BF /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D89ED15BD6C1F00EDF2BF /* UserModel.m */; };
+		F21D89F215BD716200EDF2BF /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D89F015BD716100EDF2BF /* UserViewController.m */; };
+		F21D89F315BD716200EDF2BF /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D89F115BD716100EDF2BF /* UserViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,20 @@
 		F21D89CF15BD6B6100EDF2BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F21D89D115BD6B6100EDF2BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F21D89D315BD6B6100EDF2BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F21D89D715BD6B6100EDF2BF /* RetainDemo-Info.plist */ = {isa = PBXFileReference; path = "RetainDemo-Info.plist"; sourceTree = "<group>"; };
+		F21D89D715BD6B6100EDF2BF /* RetainDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetainDemo-Info.plist"; sourceTree = "<group>"; };
 		F21D89D915BD6B6100EDF2BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F21D89DB15BD6B6100EDF2BF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F21D89DD15BD6B6100EDF2BF /* RetainDemo-Prefix.pch */ = {isa = PBXFileReference; path = "RetainDemo-Prefix.pch"; sourceTree = "<group>"; };
-		F21D89DE15BD6B6100EDF2BF /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F21D89DD15BD6B6100EDF2BF /* RetainDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetainDemo-Prefix.pch"; sourceTree = "<group>"; };
+		F21D89DE15BD6B6100EDF2BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F21D89DF15BD6B6100EDF2BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F21D89E115BD6B6100EDF2BF /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		F21D89E115BD6B6100EDF2BF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F21D89E215BD6B6100EDF2BF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F21D89E515BD6B6100EDF2BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		F21D89EC15BD6C1E00EDF2BF /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		F21D89ED15BD6C1F00EDF2BF /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		F21D89EF15BD716100EDF2BF /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		F21D89F015BD716100EDF2BF /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		F21D89F115BD716100EDF2BF /* UserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,17 @@
 		F21D89D515BD6B6100EDF2BF /* RetainDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F21D89DE15BD6B6100EDF2BF /* AppDelegate.h */,
-				F21D89DF15BD6B6100EDF2BF /* AppDelegate.m */,
+				F21D89EC15BD6C1E00EDF2BF /* UserModel.h */,
+				F21D89ED15BD6C1F00EDF2BF /* UserModel.m */,
 				F21D89E115BD6B6100EDF2BF /* ViewController.h */,
 				F21D89E215BD6B6100EDF2BF /* ViewController.m */,
 				F21D89E415BD6B6100EDF2BF /* ViewController.xib */,
+				F21D89EF15BD716100EDF2BF /* UserViewController.h */,
+				F21D89F015BD716100EDF2BF /* UserViewController.m */,
+				F21D89F115BD716100EDF2BF /* UserViewController.xib */,
 				F21D89D615BD6B6100EDF2BF /* Supporting Files */,
+				F21D89DE15BD6B6100EDF2BF /* AppDelegate.h */,
+				F21D89DF15BD6B6100EDF2BF /* AppDelegate.m */,
 			);
 			path = RetainDemo;
 			sourceTree = "<group>";
@@ -151,6 +164,7 @@
 			files = (
 				F21D89DA15BD6B6100EDF2BF /* InfoPlist.strings in Resources */,
 				F21D89E615BD6B6100EDF2BF /* ViewController.xib in Resources */,
+				F21D89F315BD716200EDF2BF /* UserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +178,8 @@
 				F21D89DC15BD6B6100EDF2BF /* main.m in Sources */,
 				F21D89E015BD6B6100EDF2BF /* AppDelegate.m in Sources */,
 				F21D89E315BD6B6100EDF2BF /* ViewController.m in Sources */,
+				F21D89EE15BD6C1F00EDF2BF /* UserModel.m in Sources */,
+				F21D89F215BD716200EDF2BF /* UserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +254,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetainDemo/RetainDemo-Prefix.pch";
 				INFOPLIST_FILE = "RetainDemo/RetainDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -249,6 +266,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RetainDemo/RetainDemo-Prefix.pch";
 				INFOPLIST_FILE = "RetainDemo/RetainDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

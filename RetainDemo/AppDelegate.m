@@ -9,16 +9,16 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
-
+#import "UserModel.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
-@synthesize viewController = _viewController;
+//@synthesize viewController = _viewController;
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+//    [_viewController release];
     [super dealloc];
 }
 
@@ -26,9 +26,25 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+//    self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+//    self.window.rootViewController = self.viewController;
+    
+    UserModel *testUser = [[UserModel alloc] init];
+    [testUser setUserId:[NSNumber numberWithInt:213]];
+    [testUser setUsername:@"Diaoser"];
+    
+    ViewController *vc = [[ViewController alloc] initWithUser:testUser];
+    vc.title = @"User Manager";
+    
+    UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self.window setRootViewController:navc];
+    
+    [navc release];
+    [vc release];
+    [testUser release];
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
